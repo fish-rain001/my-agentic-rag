@@ -20,6 +20,8 @@ dependencies = [
     "requests",
 ]
 
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["my_agentic_rag*"]
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages]
+find = {where = ["."], include = ["my_agentic_rag*"]}
