@@ -20,5 +20,5 @@ dependencies = [
     "requests",
 ]
 
-[tool.setuptools]
-packages = ["my_agentic_rag"]
+[tool.setuptools.packages.find]
+where = ["src"]
